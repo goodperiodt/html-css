@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+        절대 경로: 절대적으로 가리킬 수 있는 경로.
+        해당 파일이 존재하는 전체 경로.
+
+        상대 경로: 현재 존재하는 디렉토리를 기준으로
+        해당 파일까지의 위치를 가리키는 경로.
+
+        절대 경로는 파일의 위치가 절대적[불변함]이므로 해당 파일의 위치를 항상 찾아낼 수 있지만, 풀네임으로 작성해야 함으로 경로가 길어진다는 단점이 있다.
+
+        상대 경로는 경로의 길이가 짧다는 장점이 있지만, 기준에 따라 상대경로가 항상 달라진다는 단점이 있다.
+    -->
+  <!--소 이미지 경로 작성
+    절대경로: C:\MyWorkspace\html-css\1. HTML\4. 멀티미디어\images
+    상대경로: .입력후(.은 내가 위치해 있는 곳) / 입력후 images폴더 안의 basic.jpg 즉, ./images/basic.jpg
+  -->
+
+  <!--src 속성 값을 잘못주었을 때, 즉, 이미지가 깨졌을 때, alt의 값이 출력된다. img 태그의 alt 속성 작성은 필수다. 웹 접근성 향상을 위해 alt를 작성해야 한다.-->
+
+  <!--figure태그를 사용하면, 이미지와 함께 부가적인 설명을 나타낼 수 있는 figurecaption 사용이 가능하다.-->
+  <figure>
+    <img src="./images/basic.jpg" alt="송아지 사진">
+    <figcaption>우리집 송아지입니다.</figcaption>
+  </figure>
+
+  <!--height는 사용하지 않는 것을 권장, 사진의 비율이 망가질 수 있다.-->
+  <img src="./images/basic.jpg" alt="송아지 사진" width="200px">
+
+  <a href="https://www.naver.com" target="_blank">
+    <img src="./images/basic.jpg" alt="송아지" width="100px">
+  </a>
+
+  <img src="https://img.hankyung.com/photo/202309/03.34443527.1.jpg" width="400px" alt="김소연 사진">
+  
+</body>
+</html>
