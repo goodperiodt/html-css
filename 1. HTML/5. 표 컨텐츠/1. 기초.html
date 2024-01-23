@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <!--table태그는 표를 작성하는 태그입니다.-->
+  <table border="1" >
+    <!--table의 자식태그, tr은 표의 행을 나타낸다.-->
+    <tr>
+      <!--Ctrl+Alt+방향키 아래 누른후 td를 th로 바꾸기
+      테이블 머리는 td보다는 th로 구현하는 것이 미관상 보기 좋다.
+      -->
+      <th>이름</th><!--tr의 자식태그 td는 한 행에 들어갈 열(칸)을 나타낸다.-->
+      <th>나이</th>
+      <th>성별</th>
+      <th>주소</th>
+      <!--가로 셀 병합 속성은 colspan, 세로 셀 병합 속성은 rowspan
+      병합하고 싶은 셀의 개수를 속성 값으로 준다.-->
+      <td rowspan="4" align="center">
+        <button>세로버튼</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>김철수</td>
+      <td>30</td>
+      <td>남자</td>
+      <td>서울특별시</td>
+    </tr>
+
+    <tr>
+      <td>박영희</td>
+      <td>25</td>
+      <td>여자</td>
+      <td>경기도 성남시</td>
+    </tr>
+
+    <tr>
+      <!--행의 4열을 하나로 병합하겠다.-->
+      <!--colspan이 칸을 하나로 병합하는 속성-->
+      <td colspan="4" align="center">
+        <button>버튼입니다.</button>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>
