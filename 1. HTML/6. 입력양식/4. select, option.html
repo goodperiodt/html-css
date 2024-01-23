@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="#">
+    <select name="drink">
+
+      <!--option 태그에 value 속성 추가후 value 속성 값을 주면 사용자가 해당 텍스트(Americano)선택 후 전송시 전송되는 값은 value의 속성 값인 ame다. 사용자에 보여지는 값은 Americano, 전송 시 전달되는 데이터는 ame다.-->
+      <optgroup label="Coffee">
+        <option value="ame">Americano</option>
+        <option value="esp">Espresso</option>
+        <option value="capp">Cappuccino</option>
+      </optgroup>
+
+      <optgroup label="Non-Coffee">
+        <option value="orange">Orange Juice</option>
+        <option value="apple">Apple Juice</option>
+        <option value="grape">Grape Juice</option>
+      </optgroup>
+    </select>
+
+    <br><br><br>
+
+    <hr>
+
+    <input type="text" list="fruits">
+    <datalist id="fruits">
+      <option>Apple</option>
+      <option>Orange</option>
+      <option>Banana</option>
+      <option>Mango</option>
+      <option>Grape</option>
+    </datalist>
+
+    <input type="submit" value="주문">
+  </form>
+</body>
+</html>
