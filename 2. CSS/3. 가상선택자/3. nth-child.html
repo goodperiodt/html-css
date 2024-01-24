@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* li.orange 또는 .fruits>.orange */
+    .fruits>li:nth-child(3) {
+      color: orange;
+    }
+
+    /* even은 짝수를 의미한다. */
+    /* odd은 홀수를 의미한다. */
+    .fruits>li:nth-child(even) {
+      color: blue;
+    }
+
+    .fruits>li:nth-child(odd) {
+      color: red;
+    }
+
+    /* n키워드 사용시 0부터 해석 */
+    /* 3n+1->1, 4, 7, 10... */
+    .fruits>li:nth-child(3n+1){
+      color: violet;
+    }
+
+    /* .food의 첫 번째 자식이 p가 아니기 때문에 지목해서 스타일을 지정할 수 없습니다. nth-child는 자식 요소가 일정한 경우에 사용한다.*/
+    .food>p:nth-child(1) {
+      font-style: italic;
+    }
+
+    /* 같은 종류의 요소 중 n번째 요소를 지목하는 방식, 품고 있는 자식 요소가 각기 다른 경우 nth-of-type을 사용한다.*/
+    .food>p:nth-of-type(1) {
+      font-style: italic;
+    }
+
+    /* 여러 개의 방식을 연습해 볼 것!! */
+    .box-group>div>div:first-child{
+      color: red;
+      font-weight: bold;
+    }
+
+    .fruits li:not(.orange) {
+      list-style: none;
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="fruits">
+    <li>딸기</li>
+    <li>사과</li>
+    <li class="orange">오렌지</li>
+    <li>망고</li>
+    <li>바나나</li>
+    <li>복숭아</li>
+    <li>파인애플</li>
+  </ul>
+
+  <hr>
+  <!-- .food>div+p*2+span -->
+  <div class="food">
+    <div>짜장면</div>
+    <p>볶음밥</p>
+    <p>닭강정</p>
+    <span>짬뽕</span>
+  </div>
+
+  <hr>
+
+  <div class="box-group">
+    <div>1</div>
+    <div>2</div>
+    <div>3
+      <div>3-1</div>
+      <div>3-2</div>
+      <div>3-3</div>
+    </div>
+  </div>
+
+</body>
+</html>

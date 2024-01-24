@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 프로그래밍 언어에서 child는 자식을 의미한다. */
+    /* 클래스가 fruits의 li요소 중 첫 번째 li요소를 선택한다. */
+    .fruits>li:first-child{
+      color: red;
+    }
+
+    .fruits>li:last-child{
+      color: yellowgreen;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- ul.fruits>li*4 -->
+  <ul class="fruits">
+    <li>딸기</li>
+    <li>사과</li>
+    <li>오렌지</li>
+    <li>망고</li>
+  </ul>
+
+</body>
+</html>
