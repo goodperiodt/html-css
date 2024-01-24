@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 클래스 선택자는 .으로 시작하고, 아이디 선택자는 #으로 시작한다. */
+    #orange {
+      font-size: 14px;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <body>
+    <h1>안녕 안녕</h1>
+    <div>
+      <ul>
+        <li>사과</li>
+        <li id="orange">오렌지</li>
+        <li>딸기</li>
+      </ul>
+    </div>
+  
+    <div>당근</div>
+    <p>토마토</p>
+    <!-- 속성 id의 값을 똑같이 작성해도 디자인은 적용되지만, 권장하지 않는다.
+      똑같은 id의 속성 값을 가진 요소가 한 페이지에 유일무이해야 한다.
+      만약 디자인을 여러 요소에 일괄적으로 적용하고 싶다면 속성 class를 이용하는 것이 맞다. -->
+    <span id="orange">오렌지</span>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* li면서 클래스가 orange인 태그가 감사는 텍스트에 해당 디자인을 적용한다.
+    
+    li.orange {
+      color: orange;
+    } */
+
+    /* ul 안에(>)있는 요소이면서 클래스가 orange인 요소에 하기 디자인을 적용한다. ul 바로 안에, ul의 직속 자식에 해당하는 요소를 선택할 때 >꺽쇠 기호를 사용한다. */
+    ul> .orange {
+      color: orange;
+    }
+
+    div>ul>li {
+      font-weight: bold;
+    }
+
+    div > ul > li > ol {
+      color: yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>안녕 안녕</h1>
+  <div>
+    <ul>
+      <li>사과
+        <ol>
+          <!-- li*3{$번째} -->
+          <li>1번째</li>
+          <li>2번째</li>
+          <li>3번째</li>
+        </ol>
+      </li>
+      <!-- 하기 li요소는 ul의 자식이다 -->
+      <li class="orange">오렌지</li>
+      <li>딸기
+        <ol>
+          <li>1번째</li>
+          <li>2번째</li>
+          <li>3번째</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <div>당근</div>
+  <p>토마토</p>
+  <span class="orange">오렌지</span>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--내부 스타일 적용 방식-->
+  <style>
+    /* 전체 선택자의 기호는 *, 기호 *은 all이다. */
+    * {
+      /* 요소 전체의 글자색은 모두 빨간색으로 적용해라 */
+      color: red;
+    }
+
+    /* 특정 요소안에 있는 모든 요소를 지정할 때, 요소 다음 한 칸 띄고 기호 *을 입력한다. 당근은 div 요소안의 요소가 아니라 div 태그의 기능을 적용 받는 텍스트다. */
+    div * {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>안녕 안녕</h1>
+  <div>
+    <ul>
+      <li>사과</li>
+      <li>오렌지</li>
+      <li>딸기</li>
+    </ul>
+  </div>
+
+  <div>당근</div>
+  <p>토마토</p>
+  <span>오렌지</span>
+</body>
+</html>
