@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body * {
+      border: 2px solid black;
+    }
+
+    .container {
+      font-size: 20px;
+      /* container가 가지고 있는 폰트 사이즈에 따라 width의 길이가 달라진다. 20px*60em->1200px */
+      width: 60em;
+    }
+
+    .parent {
+      width: 50%;
+      font-size: 2em; /*40px*/
+    }
+
+    .child {
+      width: 30%; /*180px*/
+      /*font-size: 1.5em; -> 60px */
+      font-size: 3rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">Container
+    <div class="parent">Parent
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      /* 인라인 요소인 span요소는 width와 height를 적용할 수 없다.
+      인라인 요소에 width와 height를 적용할 수 있는 방법은 display를 사용해서 블록 속성을 갖게 한다. */
+      display: block;
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+
+    a {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: green;
+      color: white;
+    }
+
+    .box {
+      height: 100px;
+      background: skyblue;
+      margin-top: 40px;
+    }
+
+    .box > input:nth-child(2) {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <span>display 속성 공부</span>
+
+  <a href="#">게시판</a>
+  <a href="#">방명록</a>
+
+  <div class="box">
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+    <input type="text" value="4">
+    <input type="text" value="5">
+    <input type="text" value="6">
+  </div>
+
+</body>
+</html>

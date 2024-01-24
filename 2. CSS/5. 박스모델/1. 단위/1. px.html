@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body * {
+      border: 2px solid black;
+      
+    }
+    
+    /* px(픽셀)은 절대적인 수치다. */
+    .container {
+      width: 1200px;
+    }
+
+    .parent {
+      /* 직속부모 요소(클래스가 .container인 요소)를 기준으로 width가 50%, 600px */
+      width: 50%;
+    }
+
+    .child {
+      /* 직속부모 요소(클래스가 .parent인 요소)를 기준으로 width가 30%, 180px*/
+      width: 30%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">Container
+    <div class="parent">Parent
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+    </div>
+  </div>
+</body>
+</html>
