@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body section {
+      width: 550px;
+
+      /* font-size는 상속이 가능하기 때문에 부모요소에 해당 속성을 적용하면 자식요소에서 비율적으로 조정이 가능하다. */
+      font-size: 10px;
+      border: 3px double #123456;
+
+      /* 위로 50px 좌우는 auto->동일한 비율로 유지해서 박스가 가운데로 오게함. 아래로 0 여백을 준다. */
+      margin: 50px auto 0;
+    }
+
+    section h1 {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 3px solid #123456;
+      background: #abcdef;
+
+      /* h1 태그는 브라우저가 기본적으로 마진을 준다. 그래서 배경을 깔끔하게 채우고 싶다면 마진을 0으로 주어야 한다.  */
+      /* reset.css를 안했을 시, margin: 0; 추가 */
+
+      /* margin을 0으로 주면 텍스트 공간이 타이트하기 때문에 위 아래로 패딩을 준다. */
+      padding: 15px 0;
+    }
+
+    /* section 태그 안에는 h1태그도 존재하기 때문에 nth-of-type(1) 을 사용한다. */
+    section>article:nth-of-type(1) {
+      border-bottom: 1px dotted #123456 ;
+    }
+
+    /* section article {
+      padding: 10px;
+    } */
+
+    section article {
+      padding: 10px 10px;
+    }
+
+    section article h2 {
+      font-size: 16px;
+      font-weight: bold;
+      /* margin: 5px 0; */
+      margin-bottom: 5px;
+    }
+    
+    section article p {
+      font-size: 10px;
+      /* margin: 5px 0; */
+    }
+
+    /* 브라우저별로 태그에 부여하는 마진 등의 기본 값이 있기 때문에 reset css(브라우저 별로 부여하는 기본 값을 모두 없애기) 를 먼저 하고, 디자인을 입힌다. */
+
+  </style>
+
+  <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+</head>
+<body>
+  <!-- 의미없는 영역을 section태그로 만들어준다. section과 article은 div로 만들어도 괜찮다. -->
+  <section>
+    <h1>속 담 풀 이</h1>
+    <article>
+      <h2>말 한마디에 천냥 빚진다.</h2>
+      <p>
+        생각해보지 않고 나오는 대로 말하다가 실수하면 상대의 마음에 아픔을 남기게 된다.
+      </p>
+    </article>
+    <article>
+      <h2>웃는 얼굴에 침 못 뱉는다.</h2>
+      <p>
+        호의적인 의사소통 방법은 자기 말만 하는 것보다 좋은 결과로 이어진다.
+      </p>
+    </article>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 300px;
+      height: 250px;
+      border: 4px solid #000;
+      /* overflow의 기본 값은 visible이다. */
+      /* auto는 요소가 안 넘치면 다 보여주고, 요소가 넘치면 scroll를 적용해서 다 볼 수 있게 해준다. */
+      overflow: auto;
+    }
+
+    .child {
+      width: 100px;
+      height: 100px;
+      background: red;
+      border: 4px solid orange;
+      font-size: 40px;
+    }
+
+    .tx1 {
+      border: 1px solid #777;
+      width: 300px;
+      height: 300px;
+      overflow: auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- 박스안의 내용(contents)이 넘쳐 흐를 때 어떻게 할 거니? : overflow방식을 사용할 것-->
+
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+  </div>
+
+  <hr>
+
+  <p class="tx1">
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi justo metus, elementum sed ipsum consequat, ultrices lacinia lorem. Donec sit amet dui velit. Proin feugiat, nulla a tristique tempor, magna tellus blandit ligula, quis pellentesque arcu urna vitae nisl. Proin lectus ipsum, vehicula vel placerat eu, maximus ut neque. Ut venenatis efficitur egestas. Curabitur eros mauris, ultricies et congue eu, pellentesque quis diam. Cras sit amet turpis vel ipsum suscipit fermentum. Proin hendrerit dapibus pellentesque. Integer placerat ante at urna venenatis cursus. Nam lacus quam, interdum a tempor et, lacinia vitae ligula. Nulla blandit quam sit amet nibh pharetra mattis. Maecenas non sodales lorem. Nulla ipsum arcu, congue in vestibulum vel, ultrices nec libero. Fusce venenatis, libero a iaculis dapibus, urna lacus vestibulum eros, faucibus tristique neque velit sit amet sem. Nullam finibus ultrices massa.
+
+Vivamus eget posuere dui. Etiam faucibus ut erat vitae feugiat. Vivamus aliquam purus id eros gravida, in blandit lacus molestie. Fusce dolor risus, ullamcorper quis molestie ac, luctus sit amet diam. Sed dictum augue accumsan felis pulvinar dictum nec sed diam. Nullam eget lacus sed dui lobortis congue eget et enim. Ut mi nunc, auctor quis diam sit amet, sodales imperdiet ligula. Cras efficitur et mi quis ultricies.
+
+Praesent congue a ligula sit amet laoreet. In cursus sapien at purus mollis viverra. Suspendisse imperdiet ligula in justo consequat condimentum. Nam id erat urna. Phasellus id enim condimentum nisi ullamcorper varius quis at augue. Morbi at erat eu nulla volutpat tempor eget ac sapien. Ut facilisis posuere neque, non pellentesque justo interdum vel. Phasellus auctor arcu magna, vel aliquam tortor tincidunt nec. Nullam ullamcorper viverra nunc quis tempus. Etiam quis semper mauris, vitae porttitor lectus. Sed at nisi justo. Cras sagittis nibh eu diam pulvinar convallis. Etiam pulvinar justo id feugiat egestas.
+
+Morbi lorem elit, vestibulum sit amet congue in, suscipit non lacus. Vivamus feugiat semper elementum. Sed luctus velit vel mauris auctor, id semper dui lacinia. Nulla sed eleifend dolor, et placerat tortor. Quisque vitae tortor neque. Donec tincidunt, sem quis sollicitudin efficitur, dui ex pellentesque nibh, vel maximus nisl nibh vel neque. Phasellus lobortis in arcu sed mollis. Aliquam maximus ante at nulla faucibus, vel molestie nunc vestibulum. Integer tristique urna dolor, et ullamcorper lacus blandit eget.
+
+Sed vulputate ac est mollis gravida. Quisque at risus sapien. Sed quis bibendum augue, vel posuere tortor. Proin quis faucibus mauris. Nullam rhoncus posuere semper. Vivamus vestibulum, orci eu pulvinar ullamcorper, tortor dui tincidunt massa, at scelerisque arcu justo vitae massa. In pretium ligula eros, et lacinia arcu commodo in.
+</p>
+  
+</body>
+</html>
