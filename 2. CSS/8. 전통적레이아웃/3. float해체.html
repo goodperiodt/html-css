@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 700px;
+      padding: 20px;
+      border: 3px solid red;
+      /* overflow: hidden; */
+    }
+
+    .box {
+      width: 200px;
+      height: 150px;
+      border: 3px solid green;
+      background: yellow;
+      font-size: 50px;
+      float: left;
+    }
+
+    /* .clear-box {
+      clear: both;
+    } */
+
+    /* clearfix라는 클래스명을 부모클래스에 추가하고,
+    가상클래스 요소에 내용(content)은 비어 있고(''),
+    display는 block으로 float방식을 둘다(both) clear하라? */
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear:both;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- float을 해제하기 위한 클래스명: clearfix -->
+  <div class="container clearfix">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <!-- <div class="clear-box"></div> -->
+  </div>
+</body>
+</html>
