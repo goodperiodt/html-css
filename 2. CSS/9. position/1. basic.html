@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 400px;
+      height: 300px;
+      border: 4px dashed lightgray;
+      margin: 100px 0px;
+
+
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background: red;
+      border: 4px dashed orange;
+
+      /*position이라는 속성을 지정했다는 것만으로는 아무런 영향이 없다. position이라는 속성을 주고, 그 다음 수치를 정해줘야 한다.  */
+
+      /* position을 relative로 주면 요소 자신을 기준으로 배치된다.
+      원래있던 위치가 기준이 되어 그 기준에서 left를 기준으로 300px이동하라 */
+      position: relative;
+      left: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -11,10 +11,10 @@
   <style>
     section {
       width: 800px;
-      border: 3px #123456 double;
+      border: 3px double #123456;
 
       /* 상하 20px 좌우비율 같게 */
-      margin: 20px auto;
+      margin: 20px auto 0;
       color: #333;
     }
 
@@ -25,12 +25,6 @@
       background: #ccc;
       padding: 20px;
       text-align: center;
-      /* font-family: cursive;
-      font-size: 2em;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px 0;
-      background: lightgray; */
     }
 
     section .intro {
@@ -40,11 +34,6 @@
       border-bottom: 3px solid gray;
       text-align: center;
       padding: 10px;
-      /* font-size: 15px;
-      text-align: center;
-      color: white;
-      background: rgb(37, 36, 36);
-      padding: 10px; */
     }
 
     section .intro em {
@@ -54,7 +43,8 @@
     /* ul로 지정해도 되지만, 나중에 웹페이지를 구성할 때, 웹페이지에 ul이 하나만 있는 경우는 드물기 때문에 클래스명을 지목하는 것이 좋다. */
     section .gallery {
       background: #6e6a6a;
-      padding: 20px;
+      /* 좌우 0으로 지정*** */
+      padding: 20px 0;
 
     }
 
@@ -62,16 +52,17 @@
       width: 23.75%;
       height: 330px;
       border: 1px solid #ccc;
-      float: left;
-      margin-right: 1%;
       padding: 5px;
       box-sizing: border-box;
+
+      float: left;
+      margin-right: 1%;
     }
 
-    .gallery li div {
+    .gallery li .pic {
       height: 150px;
       border: 1px solid lightgray;
-      background: #ccc;
+      background: #fff;
     }
 
     .gallery li p {
@@ -86,11 +77,12 @@
 
     #tulip {
       margin-left: 1%;
-      background-color: #d31515;
+      background: #d31515;
     }
 
     #tulip .pic {
-      background-color: url(./images/tulip.jpg);
+      /* 속성명 확인할 것: image가 아니라 color로 되어 있었음 */
+      background-image: url(./images/tulip.jpg);
       background-size: cover;
       background-position: 40%;
       background-repeat: no-repeat;
