@@ -1,0 +1,174 @@
+@import url(/html-css/common.css);
+
+body {
+  background: #AAAAAA;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header style */
+#wrapper h1 {
+  padding: 20px auto 0;
+  font-size: 6em;
+  color: #fff;
+  text-align: center;
+  background: #F28B30;
+}
+
+#wrapper h1 span {
+  /* 인라인 요소인 span태그에 블록 성질 부여하기? */
+  display: block;
+  font-size: 18px;
+  padding: 10px;
+  background: #F28B30;
+}
+
+#wrapper .stit {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  /* padding은 좌우 auto라는 개념이 없는 건가? */
+  padding: 5px;
+}
+
+/* div class="container clearfix" */
+#wrapper .container {
+  background: white;
+}
+
+#wrapper .side-menu {
+  float: left;
+  width: 20%;
+}
+
+#wrapper .side-menu h3 {
+  background-color: #8C030E;
+  padding:10px;
+  color: white;
+  font-size: 18px;
+}
+
+#wrapper .side-menu ul {
+  text-decoration: underline;
+}
+
+#wrapper .side-menu ul li {
+  padding:10px;
+}
+
+#wrapper .main-content {
+  width: 60%;
+  float: left;
+  background-color: #F2F2F2;
+  margin-left: 153.98;
+}
+
+#wrapper .main-content .art-piece {
+  font-size: 18px;
+  line-height: 2em;
+  font-family: '본고딕 normal';
+  padding: 0 10px 0;
+}
+
+#wrapper .main-content .art-piece:nth-child(1) {
+  margin-top: 20px;
+}
+
+#wrapper .main-content .art-piece h4 {
+  background: #164059;
+  color: #F2F2F2;
+  padding-left: 5px;
+}
+
+#wrapper .main-content .art-piece .artist {
+  /* margin: 10px auto; */
+  margin-top: 10px;
+  color: #164059;
+}
+
+#wrapper .main-content .art-piece .detail {
+  color: #164059;
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* 이게 왜 적용됐는지 의문이다. */
+#wrapper .main-content .art-piece:nth-child(6) p.detail {
+  margin-bottom: 0;
+}
+
+#wrapper .banner {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: white;
+}
+
+#wrapper .banner h3 {
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+#wrapper .banner h3 * {
+  display: block;
+  margin: 10px auto;
+}
+
+#wrapper .banner h3 span {
+  text-decoration: underline;
+}
+
+#wrapper .banner h3 .all {
+  color: #AAAAAA;
+}
+
+#wrapper .banner h3 .love {
+  color: #F28B30;
+}
+
+#wrapper .banner h3 strong {
+  font-size: 1.1em;
+}
+
+#wrapper .banner .link {
+  font-size: 12px;
+}
+
+#wrapper .banner .link li {
+  margin: 10px 0;
+}
+
+#wrapper .banner .link li * {
+  display: block;
+  margin: 5px 0px;
+}
+
+#wrapper .banner .link li a {
+  text-decoration: underline;
+}
+
+#wrapper .banner .link li span {
+  font-weight: 400;
+}
+
+#wrapper footer {
+  background: #164059;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#wrapper footer a {
+  text-decoration: underline;
+}
+
+#wrapper footer span {
+  font-size: 1.1em;
+}
