@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: fit-content;
+      border: 2px solid red;
+      padding: 20px;
+
+      /* 안쪽의 아이템을 가로로 배치하고 싶으면 겉(container에게 display:flex; 를 적용한다.) flex를 사용하려면, 정렬 대상인 item을 감싸고 있는 대상에 display:flex; 를 적용한다. */
+      display: flex;
+    }
+
+    
+    .item {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #000;
+    }
+
+    .container2, .container3 {
+      /* inline-flex는 *안쪽의 아이템들도 가로로 정렬하면서, *겉을 감싸는 container도 가로로 정렬하게 한다. */
+
+      /* display를 flex 줄건지, inline-flex를 줄건지 그 차이점 */
+      display: inline-flex;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container2">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="container3">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+</body>
+</html>

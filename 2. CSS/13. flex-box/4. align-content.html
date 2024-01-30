@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      height: 400px;
+      width: 400px;
+      border: 4px solid #000;
+      display: flex;
+      flex-flow: row wrap;
+
+
+      /* align-content의 기본 값은 stretch다. */
+      /* align-content는 수직축 정렬이다. 현재 주축(flex-direction) 이 row(가로) 이기 때문에 가로에 대한 수직축이 세로, 그래서 세로를 기준으로 space-evenly를 하면 item간 세로 간격이 동일하게 적용되는 것을 알수 있다. */
+      align-content: space-evenly;
+    }
+
+    .item {
+      width: 150px;
+      height: 100px;
+      background: red;
+      border: 4px dashed orange;
+      border-radius: 10px;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <item class="item">A</item>
+    <item class="item">B</item>
+    <item class="item">C</item>
+    <item class="item">D</item>
+    <item class="item">E</item>
+  </div>
+</body>
+</html>
